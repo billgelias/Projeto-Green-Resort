@@ -1,0 +1,867 @@
+nav {
+    background-color:darkolivegreen;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    height: 10%; 
+    z-index: 999;
+    width: 100%;
+    letter-spacing: .1rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav img {
+    border-bottom: 0.1px solid darkolivegreen;
+    border-radius: 3px;
+    width: 15vh;
+    height: auto;
+}
+nav ul li {
+    margin-right: 15px;
+    font-size: 15px;   
+}
+nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1em 0.3em 0.8em rgb(56, 55, 55);
+}
+nav ul li a:hover {
+    box-shadow: 1px 6px 1px 1px darkolivegreen;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+nav ul li button {
+    width: 130px;
+    color: darkolivegreen;
+    text-shadow: 0.2em 0.4em 0.7em black;
+    box-shadow: 6px 6px 6px 6px rgb(72, 90, 22);
+    border-radius: 25px;
+    font-size: 20px;
+    border: 1px bold rgba(58, 116, 51, 0.5);
+    height: 40px;
+}
+nav ul li button:hover {
+    background-color:darkolivegreen;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 6px 6px 6px 6px rgb(38, 46, 15);
+    border: 1px bold rgba(58, 116, 51, 0.5);
+    color: white;
+    transition: 0.5s;
+}
+nav .menu {
+    display: none;
+}
+.hero {
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./../assets/33.jpg);
+    background-size: cover; 
+}
+.hero .text-content {
+    color:rgb(0, 0, 0);
+    text-shadow: 0.5em 0.4em 0.5em rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;   
+}
+.hero .text-content h1 {
+    font-size: 70px;
+    margin-bottom: 100px;
+    letter-spacing: .4rem;
+    line-height: 4rem;
+}
+.hero .text-content h3 {
+    font-size: 35px;
+    margin-bottom: 100px;
+    letter-spacing: .2rem;
+    line-height: 2rem;
+    text-shadow: 0.1em 0.1em 0.5em rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+.hero .text-content button {
+    width: 250px;
+    background-color: rgba(244, 255, 249, 0.4);
+    box-shadow: 6px 6px 6px 6px rgb(72, 90, 22. 0.3);
+    border-radius: 45px;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    height: 70px;
+    border: 4px bold rgba(58, 116, 51, 0.5);
+}
+.hero .text-content button a {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+
+}
+.hero .text-content button:hover {
+    border: 1px solid rgb(63, 63, 63, 0.3);
+    box-shadow: 6px 6px 6px 6px rgb(72, 90, 22, 0.2);
+    text-shadow: 0.2em 0.4em 0.5em black;
+    transition: 0.5s;
+}
+.atividades h2 {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 100px;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.1em 0.1em 0.2em darkolivegreen;
+}
+.atividades .item, .atividades .item1 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.atividades .item1 {
+  flex-direction: row-reverse;
+}
+
+.atividades .itemPhoto .imgItem, .atividades .itemPhoto1 .imgItem1 {
+  width: 75%; 
+  height: 75%; 
+  object-fit: cover;
+  box-shadow: -6px 6px 6px 6px rgb(72, 90, 22);
+}
+
+.atividades .itemPhoto1 .imgItem1 {
+  margin-left: 300px;
+  box-shadow: 6px 6px 6px 6px rgb(72, 90, 22);
+}
+
+.atividades .item .item-text, .atividades .item1 .item-text1 {
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+  font-weight:600;
+}
+.atividades .item .item-text h3, .atividades .item1 .item-text1 h3 {
+  color: darkolivegreen;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.clients {
+    background-image: linear-gradient(white, rgb(103, 138, 41));
+}
+.clients .text {
+    text-align: left;
+}
+.clients .text h2 {
+    font-size: 70px;
+    letter-spacing: 0.2rem;
+    font-weight: bolder;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0.1em 0.1em 0.2em rgb(74, 92, 8);
+}
+.clients .text p {
+    font-size: 1.8rem;
+    text-shadow: 0.2em 0.4em 0.5em darkolivegreen;
+    margin-bottom: 5rem;
+}
+.clients .containerCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    width: 50%;
+    padding: 0px 50px 0px 50px;
+}
+.clients .containerCards .left {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 60%;
+    margin-right: 80px;
+
+}
+.clients .containerCards .left .card.vertical {
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+}
+.clients .containerCards .right {
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+.clients .containerCards .right .card.horizontal {
+    width: 500px;
+    height: 300px;
+}
+.clients .containerCards .right .card.retangular {
+    margin-top: 40px;
+    width: 300px;
+    height: 550px;
+    margin-top:70px;
+}
+.clients .containerCards .card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px 20px 10px 30px;
+    box-shadow: 2px 2px 6px 2px rgb(0, 0, 0);
+    text-align: left;
+    border-radius: 10px;
+    min-width: 100px;
+}
+.clients .containerCards .card .cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 5%;
+}
+.clients .containerCards .card .cardContent .person {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+.clients .containerCards .card .cardContent .person .image {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 100px;
+}
+.clients .containerCards .card .cardContent .person .text-content {
+    margin-left: 20px;
+}
+.clients .containerCards .card .cardContent .person h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.clients .containerCards .card .cardContent .person span {
+    font-size: 0.5rem;
+    color: grey;
+}
+.clients .containerCards .card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+    color: darkolivegreen;
+}
+.clients .containerCards .card q {
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 2rem;
+    padding-left: 30px;
+    position: relative;
+}
+.clients .containerCards .card q::before {
+    content:'\201C';
+    font-style: italic;
+    font-size: 4rem;
+    color:rgb(103, 138, 41);
+    position: absolute;
+    top: 5px;
+    left: -10px;
+}
+.atendimento .text-context {
+    margin: 30px 0px 80px 0px;
+    
+}
+.atendimento .text-content h2 {
+    font-size: 70px;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0.1em 0.1em 0.2em darkolivegreen;
+}
+.atendimento .text-content p {
+    font-size: 1.8rem;
+    text-align: center;
+    text-shadow: 0.2em 0.4em 0.5em darkolivegreen;
+}
+.atendimento .cards {
+    display: flex;
+    position: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    padding: 0px 20px 0px 20px;
+}
+.atendimento .cards .card {
+    display: flex;
+    align-items: center;
+    flex-basis: 25%;
+    justify-content: space-between;
+    background-color: white;
+    padding: 40px 20px 20px 40px; 
+    box-shadow: 2px 2px 6px 2px rgb(81, 102, 7);
+    border-radius: 10px;
+    min-width: 50px;
+    height: 150px;
+    width: auto;
+}
+.atendimento .cards .card .cardContent {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.atendimento .cards .card .cardContent .time {
+    top: 0px;
+    width: 150px;
+    align-items: center;
+    margin: 10px;
+}
+.atendimento .cards .card h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    color: darkolivegreen; text-shadow: 0.1em 0.3em 0.4em rgb(129, 128, 128);
+}
+.photos {
+    height: 80%;
+    margin-left: 10%;
+}
+.photos .images {
+    margin: 50px 0px 80px 0px;
+}
+.photos .images h2 {
+    font-size: 70px;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    text-shadow: 0.1em 0.1em 0.2em darkolivegreen;
+}
+.photos .images p {
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
+    margin-left: 100px;
+    text-shadow: 0.2em 0.4em 0.5em darkolivegreen;
+}
+.photos .container .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.photos .images .photo .imagem-padrao {
+    width: 80%;
+    height: 80%;
+    box-shadow: 8px 4px 4px 4px rgb(72, 90, 22);
+}
+.contato {
+    display: absolute;
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+    
+}
+.contato .text-content h2 {
+    font-size: 70px;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-shadow: 0.1em 0.1em 0.2em darkolivegreen;
+}
+.contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    width: 45%;
+}
+.contato form .row {
+    display: flex;
+    margin-bottom: 20px;
+    height: 100%;
+    width: 80%;
+}
+.contato form .row .input-field {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 0px 20px;
+    width: 100%;
+}
+.contato form .row .input-field input {
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    width: 100%;
+    border: 1px solid rgb(63, 71, 26);
+}
+.contato form .row .input-field label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: darkolivegreen; text-shadow: 0.1em 0.3em 0.7em rgb(129, 128, 128);
+}
+.contato form .row .input-field textarea {
+    padding: 10px;
+    border-radius: 4px; 
+    width: 100%;
+    resize: vertical;
+    font-size: 1.2rem;
+    border: 1px solid rgb(63, 71, 26);
+}
+.contato form .buttonForm button {
+    font-size: 15px;
+    padding:10%;
+    border-radius: 5px;
+    width: 100px;
+    color: rgb(17, 17, 17);
+    box-shadow: 3px 3px 3px 3px rgba(17, 17, 17, 0.2);
+    border: 1px solid rgb(0, 0, 0);
+    height: 50px;
+}
+.contato form .buttonForm button:hover {
+    border: 2px solid rgb(78, 78, 78);
+    box-shadow: 6px 6px 6px 6px rgba(255, 255, 255, 0.2);
+    transition: 0.1s;
+}
+.contato form .buttonForm button a {
+    text-decoration: none;
+    color: black;
+}
+footer {
+    min-height: 40vh;
+    background-color: darkolivegreen;
+    padding: 40px 20px 0px 40px;
+    width: auto;
+    height: auto;
+}
+footer .rowFooter {
+    display:flex;
+    justify-content: flex-start;
+    
+}
+footer .rowFooter img {
+    border-radius: 3%;
+
+}
+footer .rowFooter .footerContent {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%; 
+}
+footer .rowFooter li {
+    color: white;
+    margin-bottom: 10px;
+    letter-spacing: .1rem;
+}
+footer .rowFooter li a {
+    color: white;
+    text-decoration: none;
+}
+footer .rowFooter li a:hover {
+    box-shadow: 1px 6px 1px 1px darkolivegreen;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+footer .rowFooter li i {
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+}
+footer .rowFooter h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    letter-spacing: .2rem;
+}
+footer .rowFooter .contatoFooter .socialMedia {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+@media screen and (max-width: 992px) {
+    nav ul {
+        display:none;
+    }
+    nav img {
+        border-bottom: 0.1px solid darkolivegreen;
+        border-radius: 3px;
+        height: 100%;
+    }
+    nav .menu {
+        font-size:2.5rem;
+        display: flex;
+        align-items: center;
+        color: white;
+        margin-right: 20px;
+        cursor:pointer;
+    }
+    .hero {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .hero .text-content h1 {
+       font-size: 3rem;
+       margin-top:100px;
+    }
+    .hero .text-content button {
+        width: 150px;
+        font-size: 10px;
+        font-weight: bold;
+        color:rgb(0, 0, 0);
+        height: 50px;
+        margin-bottom: 200px;
+        
+    }
+    .hero .text-content h3 {
+        font-size: 1.4rem;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .atividades h2 {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 100px;
+        letter-spacing: 0.2rem;
+        text-shadow: 0.1em 0.1em 0.2em darkolivegreen;
+    }
+    
+    .atividades .item, .atividades .item1 {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 80%;
+    }
+    .atividades .itemPhoto .imgItem, .atividades .itemPhoto1 .imgItem1 {
+        width: 300px;
+        height: auto;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        box-shadow: -3px 3px 3px 3px rgb(72, 90, 22);
+    }
+    .atividades .itemPhoto1 .imgItem1 {
+        margin-left: 0px;
+        box-shadow: 3px 3px 3px 3px rgb(72, 90, 22);
+    }
+    .atividades .item .item-text, .atividades .item1 .item-text1 {
+        display: flex;
+        font-size: 15px;
+        text-align:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width:250px;
+        font-weight:600;
+    }
+    .atividades .item .item-text h3, .atividades .item1 .item-text1 h3 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .clients .text {
+        text-align: center;
+        
+    }
+    .clients .text h2 {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        letter-spacing: 0.2rem;
+        text-shadow: 0.1em 0.1em 0.2em darkolivegreen;
+    }
+    .clients .text p {
+        font-size: 1.5rem;
+        text-shadow: 0.2em 0.4em 0.5em darkolivegreen;
+        margin-bottom: 2rem;
+    }
+    .clients .containerCards {
+        flex-direction: column;
+        margin-top: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .clients .containerCards .left {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-right: 0px;
+    }
+    .clients .containerCards .right {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding-top: 0px;
+    }
+    .clients .containerCards .left .card.vertical {
+        width: 90%;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    .clients .containerCards .right .card.horizontal {
+        width: 90%;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    .clients .containerCards .right .card.retangular {
+        width: 90%;
+        height: auto;
+        margin-top: 40px;
+    }
+    .clients .containerCards .card {
+        padding: 10px;
+        text-align: center;
+        width: 90%;
+        height: auto;
+        margin-bottom: 10px;
+        min-width: 300px;
+    }
+    .clients .containerCards .card .cardContent {
+        justify-content:flex-end;
+        width: 100%;
+        height: auto;
+        margin-top:0%;
+    }
+    .clients .containerCards .card .cardContent .person h4 {
+        font-size: 0.4rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .clients .containerCards .card .cardContent .person span {
+        font-weight: bolder;
+    }
+    .clients .containerCards .card h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+
+    }
+    .clients .containerCards .card q {
+        line-height: 1.5rem;
+
+    }
+    .atendimento .text-context {
+        margin: 40px 0px 40px 0px;
+        
+    }
+    .atendimento .text-content h2 {
+        font-size: 50px;
+        font-weight: bolder;
+        letter-spacing: 0.2rem;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+
+    }
+    .atendimento .text-content p {
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
+        text-align:flex;
+        text-shadow: 0.2em 0.4em 0.5em darkolivegreen;
+    }
+    .atendimento .cards {
+        display: flex;
+        justify-content: column;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        padding: 0px;
+    }
+    .atendimento .cards .card {
+        display: flex;
+        align-items: center;
+        flex-basis: 15%;
+        justify-content: column;
+        background-color: white;
+        padding: 50px 50px 50px 50px; 
+        box-shadow: 2px 2px 3px 2px rgb(81, 102, 7);
+        border-radius: 10px;
+        min-width: 20px;
+        height: auto;
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    .atendimento .cards .card .cardContent {
+        display: flex;
+        align-items:center;
+        justify-content: column;
+    }
+    .atendimento .cards .card .cardContent .time {
+        top: 0px;
+        width: 100px;
+        align-items: center;
+        margin: 0px;
+        margin-left:20px;
+    }
+    .atendimento .cards .card h3 {
+        margin-top: 0px;
+        font-size: 1.2rem;
+        text-align: flex;
+    }
+    .photos {
+        height: 80%;
+        margin-left: 0%;
+    }
+    .photos .images {
+        margin: 50px 0px 80px 0px;
+    }
+    .photos .images h2 {
+        font-size: 50px;
+        font-weight: bolder;
+        letter-spacing: 0.2rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        text-shadow: 0.1em 0.1em 0.2em darkolivegreen;
+    }
+    .photos .images p {
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+        margin-left: 0px;
+    }
+    .photos .container .galeria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: none;
+        gap: 20px;
+    }
+    .photos .images .photo .imagem-padrao {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        box-shadow: 4px 2px 2px 2px rgb(72, 90, 22);
+    }
+    .contato {
+        display: absolute;
+        margin-top: 20px;
+        margin-bottom: 20%;
+        width: 100%;
+        height: auto;
+        
+    }
+    .contato .text-content h2 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .contato form {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+    .contato form .row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    .contato form .row .input-field {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .contato form .row .input-field input {
+        font-size: 1rem;
+        
+    }
+    .contato form .row .input-field label {
+        font-size: 1rem;
+    }
+    .contato form .row .input-field textarea {
+        margin-bottom: 20px;
+    }
+    footer {
+        margin-top: 150px;
+        min-height: 40vh;
+        background-color: darkolivegreen;
+        padding:30px;
+        height: auto;
+        width: auto;
+    }
+    footer .rowFooter {
+        display:flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        
+    }
+    footer .rowFooter img {
+        border-radius: 3%;
+        width: 200px;
+    }
+    footer .rowFooter .footerContent {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 90%; 
+    }
+    footer .rowFooter li {
+        color: white;
+        margin-bottom: 10px;
+        letter-spacing: 0.1rem;
+        line-height: 1rem;
+    }
+    footer .rowFooter .footerContent {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+    footer .rowFooter .footerContent li {
+        margin-bottom: 15px;
+
+    }
+
+    footer .rowFooter li a {
+        color: white;
+        text-decoration: none;
+    }
+    footer .rowFooter li a:hover {
+        box-shadow: 1px 6px 1px 1px darkolivegreen;
+        color: rgb(0, 0, 0);
+        transition: 0.5s;
+    }
+    footer .rowFooter li i {
+        color: rgb(255, 255, 255);
+        margin-right: 0px;
+    }
+    footer .rowFooter h3 {
+        justify-content: center;
+        color: rgb(43, 65, 4);
+        text-shadow: 0.1em 0.1em 0.8em rgb(163, 163, 163);
+        font-size: 1rem;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+    }
+    footer .rowFooter .contatoFooter .socialMedia {
+        display: flex;
+        flex-direction: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        height: 100%;
+        width: 100%;
+    }
+}
