@@ -1,60 +1,3 @@
-nav {
-    background-color:darkolivegreen;
-    display: flex;
-    justify-content: space-between;
-    position:fixed;
-    height: 10%; 
-    z-index: 999;
-    width: 100%;
-    letter-spacing: .1rem;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-nav img {
-    border-bottom: 0.1px solid darkolivegreen;
-    border-radius: 3px;
-    width: 15vh;
-    height: auto;
-}
-nav ul li {
-    margin-right: 15px;
-    font-size: 15px;   
-}
-nav ul li a {
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-shadow: 0.1em 0.3em 0.8em rgb(56, 55, 55);
-}
-nav ul li a:hover {
-    box-shadow: 1px 6px 1px 1px darkolivegreen;
-    color: rgb(0, 0, 0);
-    transition: 0.5s;
-}
-nav ul li button {
-    width: 130px;
-    color: darkolivegreen;
-    text-shadow: 0.2em 0.4em 0.7em black;
-    box-shadow: 6px 6px 6px 6px rgb(72, 90, 22);
-    border-radius: 25px;
-    font-size: 20px;
-    border: 1px bold rgba(58, 116, 51, 0.5);
-    height: 40px;
-}
-nav ul li button:hover {
-    background-color:darkolivegreen;
-    border: 1px solid rgb(255, 255, 255);
-    box-shadow: 6px 6px 6px 6px rgb(38, 46, 15);
-    border: 1px bold rgba(58, 116, 51, 0.5);
-    color: white;
-    transition: 0.5s;
-}
-nav .menu {
-    display: none;
-}
 .hero {
     height: 150vh;
     display: flex;
@@ -489,22 +432,6 @@ footer .rowFooter .contatoFooter .socialMedia {
     margin-top: 20px;
 }
 @media screen and (max-width: 992px) {
-    nav ul {
-        display:none;
-    }
-    nav img {
-        border-bottom: 0.1px solid darkolivegreen;
-        border-radius: 3px;
-        height: 100%;
-    }
-    nav .menu {
-        font-size:2.5rem;
-        display: flex;
-        align-items: center;
-        color: white;
-        margin-right: 20px;
-        cursor:pointer;
-    }
     .hero {
         max-width: 100%;
         height: auto;
